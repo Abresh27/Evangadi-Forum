@@ -1,0 +1,24 @@
+.about-container {
+  margin-top: 75px;
+}
+.about-text {
+  color: #fe8402;
+  padding-bottom: 10px;
+}
+.about-container p {
+  font-size: 13px;
+  color: #62626f;
+}
+.about-container h2 {
+  color: #4b456f;
+}
+.how-btn {
+  background-color: #fe8402;
+  --bs-btn-border-color: none;
+  margin-top: 20px;
+}
+@media (max-width: 830px) {
+  .how-btn {
+    margin-top: 10px;
+  }
+}
