@@ -1,3 +1,4 @@
+//Import express module
 const express = require("express");
 const app = express();
 const authMiddleware = require("./middleware/auth.Middleware");
