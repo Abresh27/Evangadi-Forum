@@ -26,7 +26,7 @@ function App() {
   async function checkUser() {
     try {
       //Send get request with the token information to check the user is authorized to access the pages
-      //and destructure the response sent from the checkUser request
+      //and destructure the response (Currently authenticated user data) sent from the checkUser request
       const { data } = await axiosInstance.get("/api/user/checkuser", {
         headers: {
           Authorization: "Bearer " + token,
@@ -34,10 +34,11 @@ function App() {
       });
       // console.log(data);
       setUserData(data);
+      // navigate()
       // console.log(userData);
     } catch (error) {
       //Navigate or force the user to log in if the back-end auth middleware send error because of ether the token dose'nt exist or invalid token
-      // console.log(error.response);
+      // console.log(error.response, "test");
       navigate("/login");
     }
   }

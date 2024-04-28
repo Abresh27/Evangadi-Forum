@@ -3,10 +3,10 @@ import axios from "axios";
 export const axiosInstance = axios.create(
   // URL for the back-end server is running locally
   {
-    baseURL: "http://localhost:3000",
+    // baseURL: "http://localhost:3000",
 
     // URL for the back-end server is running on the render.com web-server
-    //baseURL: "",
+    baseURL: "https://evangadi-forum-npr8.onrender.com",
   }
 );
 

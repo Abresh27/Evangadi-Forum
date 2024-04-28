@@ -97,8 +97,8 @@ export default function Login() {
                   <VisibilityOutlinedIcon
                     style={{
                       position: "absolute",
-                      top: "58.6%",
-                      right: "55%",
+                      top: "34%",
+                      right: "5%",
                       fontSize: "1.4rem",
                       cursor: "pointer",
                       color: "#fe8402",
@@ -113,8 +113,8 @@ export default function Login() {
                   <VisibilityOffOutlinedIcon
                     style={{
                       position: "absolute",
-                      top: "58.6%",
-                      right: "55%",
+                      top: "34%",
+                      right: "5%",
                       fontSize: "1.4rem",
                       cursor: "pointer",
                       opacity: "0.5",

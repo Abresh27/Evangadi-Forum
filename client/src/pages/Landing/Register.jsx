@@ -122,8 +122,8 @@ export default function Register() {
                     className="eye-icon"
                     style={{
                       position: "absolute",
-                      top: "55.8%",
-                      right: "55%",
+                      top: "57%",
+                      right: "7%",
                       fontSize: "1.4rem",
                       cursor: "pointer",
                       color: "#fe8402",
@@ -138,8 +138,8 @@ export default function Register() {
                   <VisibilityOffOutlinedIcon
                     style={{
                       position: "absolute",
-                      top: "55.8%",
-                      right: "55%",
+                      top: "57%",
+                      right: "7%",
                       fontSize: "1.4rem",
                       cursor: "pointer",
                       opacity: "0.5",
