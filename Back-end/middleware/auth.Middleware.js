@@ -7,6 +7,7 @@ async function authMiddleware(req, res, next) {
   // console.log(authHeader);
   if (!authHeader || !authHeader.startsWith("Bearer")) {
     return res.status(401).json({ msg: "Authentication token not existed" });
+    next();
   }
   //Extract only the token part from the authHeader using split
   const token = authHeader.split(" ")[1];
