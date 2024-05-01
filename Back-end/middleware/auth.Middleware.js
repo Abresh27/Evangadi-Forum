@@ -7,7 +7,7 @@ async function authMiddleware(req, res, next) {
   // console.log(authHeader);
   if (!authHeader || !authHeader.startsWith("Bearer")) {
     return res.status(401).json({ msg: "Authentication token not existed" });
-    next();
+    // next();
   }
   //Extract only the token part from the authHeader using split
   const token = authHeader.split(" ")[1];
@@ -19,7 +19,6 @@ async function authMiddleware(req, res, next) {
 
     //Attaching the user data in the request object to send to the next route (checkUser function) or any other routs
     req.userData = { user_name, user_id };
-
     //Go to the authorized routes
     next();
   } catch (error) {

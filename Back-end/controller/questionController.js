@@ -37,7 +37,7 @@ async function createQuestion(req, res) {
   }
 }
 
-//Function to get the questions from the database
+//Function to get the list of questions from the database
 async function getQuestions(req, res) {
   try {
     const [questionData] = await connection.execute(
