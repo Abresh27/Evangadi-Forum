@@ -44,8 +44,8 @@ app.use("/api/question", authMiddleware, questionRoutes);
 app.use("/api/answer", authMiddleware, answerRoutes);
 
 //Listener
-// const PORT = 3000;
-// app.listen(PORT, (err) => {
-//   if (err) throw err;
-//   else console.log(`The server is running on ${PORT}`);
-// });
+const PORT = 3000;
+app.listen(PORT, (err) => {
+  if (err) throw err;
+  else console.log(`The server is running on ${PORT}`);
+});
